@@ -1,33 +1,44 @@
 #navbar{
     opacity : 0.95;
 }
-nav {
-    height: 50px;
-    line-height: 50px;
-}
-
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    height: 50px;
-    line-height: 50px;
-}
-
-nav .button-collapse i {
-    height: 50px;
-    line-height: 50px;
-}
-
-nav .brand-logo {
-    font-size: 1.6rem;
-}
-
-@media only screen and (min-width: 601px){
-    nav, nav nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 50px;
-        line-height: 50px;
-    }
-}
-
 
 .onPointer:hover{
     cursor : pointer;
+}
+
+
+
+
+
+/* home */
+.row-promo{
+    margin-top: 200px;
+}
+.promo{
+    padding : 50px;
+}
+.promo-caption{
+    color: rgba(0,0,0,0.71);
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+.promo-text{
+    color: rgba(0,0,0,0.71);
+    font-weight: 300;
+    font-size : 1.3rem;
+}
+.promo i{
+    color : #0277bd ;
+}
+
+/* actu */
+.actu{
+    padding : 10px;
+}
+
+.actu-title{
+    padding-top:10px;
+}
+.img-profil{
+    max-width : 80px;
 }
