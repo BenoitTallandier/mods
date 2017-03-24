@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/theme.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <div id='navbar' class='navbar-fixed'>
+            <nav>
+                <div class="nav-wrapper light-blue darken-3">
+                    <a href="#" class="brand-logo">Kings Mods</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="actu.html">Sass</a></li>
+                        <li><a href="mods.html">Components</a></li>
+                        <li><a href="collapsible.html">JavaScript</a></li>
+                        <li><a data-target="modal1" class="modal-trigger onPointer">login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <form method='POST'>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="login" type="text" class="validate">
+                        <label for="login">Login</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">https</i>
+                        <input id="psw" type="password" class="validate">
+                        <label for="psw">Password</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <ul id="tabs-swipe-demo" class="tabs">
+                  <li class="tab col s3"><a class='blue-text ' href="#test1">Mon profil</a></li>
+                  <li class="tab col s3"><a class="blue-text" href="#test2">Mes Listes</a></li>
+                  <li class="tab col s3"><a class="blue-text active " href="#test3">Mes serveurs</a></li>
+                  <div class="indicator blue" style="z-index:1"></div>
+                </ul>
+              </div>
+              <div id="test1" class="col s12">
+
+
+              </div>
+              <div id="test2" class="col s12 ">
+                  <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                  </ul>
+              </div>
+              <div id="test3" class="col s12 ">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>MyServer</div>
+                      <div class="collapsible-body"><span>
+                          Liste active :
+
+                              <div class="input-field" style='display:inline-block;    vertical-align:middle;'>
+                                <select style=''>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                </select>
+                              </div>
+
+                          </br><i class="material-icons" style="color:green">done</i> Pret à jouer : OK
+                        </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

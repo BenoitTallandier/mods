@@ -2,6 +2,10 @@ $(window).load(function(){
     $('#modsDetail').hide();
 });
 $(window).ready(function(){
+    $('.carousel').carousel();
+    $('#tabs-swipe-demo').tabs({ 'swipeable': true });
+    $('select').material_select();
+    $('.collapsible').collapsible();
     $('.modal-trigger').leanModal();
     $('.materialboxed').materialbox();
     $('.modBox').click(seeDetailMod);
